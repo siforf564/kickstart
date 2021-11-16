@@ -6,15 +6,15 @@ const Header = () => {
     return (
       <Menu style={{ marginTop: '20px' }}>
         <Link route='/'>
-          <a class='item'>CrowdCoin</a>
+          <a className='item'>CrowdCoin</a>
         </Link>
 
         <Menu.Menu position='right'>
         <Link route='/'>
-          <a class='item'>Campaigns</a>
+          <a className='item'>Campaigns</a>
         </Link>
         <Link route='/campaigns/new'>
-          <a class='item'>+</a>
+          <a className='item'>+</a>
         </Link>
         </Menu.Menu>
       </Menu>

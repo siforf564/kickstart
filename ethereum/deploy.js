@@ -1,4 +1,4 @@
-const HDWalletProvider = require('truffle-hdwallet-provider');
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json')
 
@@ -18,5 +18,6 @@ const deploy = async () => {
     .send({ gas: '1000000', from: accounts[0] });
 
   console.log('Contract deployed to', result.options.address);
+  provider.engine.stop();
 };
 deploy();

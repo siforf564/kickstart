@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "export NODE_ENV=production && node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.6.0",
     "ganache-cli": "^6.12.2",
     "mocha": "^8.3.2",
     "next": "^11.1.2",
